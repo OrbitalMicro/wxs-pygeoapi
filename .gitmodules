@@ -1,0 +1,3 @@
+[submodule "pygeoapi"]
+	path = pygeoapi
+	url = git@github.com:OrbitalMicro/pygeoapi.git

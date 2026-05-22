@@ -1,0 +1,13 @@
+{
+	"name": "pygeoapi-dev",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "pygeoapi",
+	"workspaceFolder": "/workspaces/wxs-pygeoapi",
+	"shutdownAction": "stopCompose",
+	"runServices": [
+		"postgres"
+	],
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	}
+}
