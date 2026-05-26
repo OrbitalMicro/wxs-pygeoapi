@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug pygeoapi API (Dev Container)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "/venv/bin/python",
+      "program": "${workspaceFolder}/pygeoapi/pygeoapi/flask_app.py",
+      "cwd": "${workspaceFolder}/pygeoapi",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "subProcess": true,
+      "preLaunchTask": "Generate OpenAPI for Debug 5001",
+      "env": {
+        "PYGEOAPI_CONFIG": "/pygeoapi/local.config.yml",
+        "PYGEOAPI_OPENAPI": "/tmp/local.openapi.debug.yml",
+        "PYGEOAPI_SERVER_URL": "http://localhost:5001",
+        "PYTHONPATH": "${workspaceFolder}/pygeoapi:${workspaceFolder}/wxs/pygeoapi",
+        "CONTAINER_PORT": "5001"
+      }
+    }
+  ]
+}

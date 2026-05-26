@@ -3,14 +3,26 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "pygeoapi",
 	"workspaceFolder": "/workspaces/wxs-pygeoapi",
+	"remoteUser": "vscode",
+	"containerUser": "vscode",
+	"updateRemoteUserUID": true,
 	"shutdownAction": "stopCompose",
 	"runServices": [
 		"postgres"
 	],
 "features": {
-	"ghcr.io/devcontainers/features/common-utils:2": {
-		"installZsh": "true",
-		"configureZshAsDefaultShell": "true"
+	"ghcr.io/devcontainers/features/common-utils:latest": {
+		"installZsh": true,
+		"installOhMyZsh": true,
+		"installOhMyZshConfig": false,
+		"configureZshAsDefaultShell": true
+	}
+},
+"customizations": {
+	"vscode": {
+		"extensions": [
+			"ms-python.debugpy"
+		]
 	}
 }
 }

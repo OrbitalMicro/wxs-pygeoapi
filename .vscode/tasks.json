@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate OpenAPI for Debug 5001",
+      "type": "shell",
+      "command": "/venv/bin/pygeoapi openapi generate /pygeoapi/local.config.yml --output-file /tmp/local.openapi.debug.yml",
+      "options": {
+        "env": {
+          "PYGEOAPI_CONFIG": "/pygeoapi/local.config.yml",
+          "PYGEOAPI_SERVER_URL": "http://localhost:5001",
+          "PYTHONPATH": "${workspaceFolder}/pygeoapi:${workspaceFolder}/wxs/pygeoapi"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
