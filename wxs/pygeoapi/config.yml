@@ -74,6 +74,7 @@ resources:
             - type: edr
               name: extensions.sensors.SensorsLocationsEDRProvider
               data:  "/workspaces/wxs-pygeoapi/ecmwf_hres_subset.nc"
+              method: linear
               # optionally specify x/y/time fields, else provider will attempt
               # to derive automagically
               x_field: longitude

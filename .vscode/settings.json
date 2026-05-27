@@ -1,4 +1,9 @@
 {
   "python.defaultInterpreterPath": "/venv/bin/python",
-  "python.terminal.activateEnvironment": false
+  "python.terminal.activateEnvironment": false,
+  "python.testing.pytestArgs": [
+    "pygeoapi"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

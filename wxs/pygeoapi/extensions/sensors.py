@@ -65,6 +65,7 @@ class SensorsLocationsEDRProvider(XarrayEDRProvider):
 
     def __init__(self, provider_def):
         super().__init__(provider_def)
+        self._default_method = provider_def.get('method', 'linear')
 
         feature_provider_def = provider_def.get('feature_provider')
         if feature_provider_def is None:
@@ -108,11 +109,14 @@ class SensorsLocationsEDRProvider(XarrayEDRProvider):
         if not numeric_properties:
             raise ProviderQueryError('No numeric parameters found for coverage')
 
+        method = kwargs.get('method', "linear")
+
         return self.position(
             wkt=point,
             datetime_=datetime_,
             select_properties=numeric_properties,
             z=z,
+            method=method,
             format_=format_,
             instance=instance
         )
