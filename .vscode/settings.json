@@ -5,5 +5,25 @@
     "pygeoapi"
   ],
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#67dcd7",
+    "activityBar.background": "#67dcd7",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#cf4ad5",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#67dcd7",
+    "statusBar.background": "#3dd3cc",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#29b4ae",
+    "statusBarItem.remoteBackground": "#3dd3cc",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#3dd3cc",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#3dd3cc99",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#3dd3cc"
 }
